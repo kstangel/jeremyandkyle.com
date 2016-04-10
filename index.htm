@@ -12,8 +12,8 @@
       font-family: "coronette",sans-serif;
    }
    h1{
+      font-weight: bold;
       font-size: 2.5em;
-      font-weight:bold;
       text-transform:uppercase;
    }
    li{
@@ -26,9 +26,6 @@
    }
    li p{
       line-height:1em;
-   }
-   li .bar{
-      font-weight: bold;
    }
    li .nh{
       font-size:.8em
@@ -260,4 +257,13 @@
       </li>
    </ul>
 </body>
+<script>
+   var isChrome = window.chrome;
+   if(isChrome){
+      var bars = document.getElementsByClassName('bar');
+      for( var i = 0; i < bars.length; i++){
+         bars[i].style.fontWeight = 'bold';
+      }
+   }
+</script>
 </html>
