@@ -1,0 +1,38 @@
+body{
+   text-align: center;
+   font-family: "coronette",sans-serif;
+}
+.header{
+   height:250px;
+   margin-bottom:30px;
+}
+.header img{
+   height:250px;
+   position:absolute;
+   margin: 0 auto;
+   right:0;
+   left:0;
+   padding:20px;
+}
+h1{
+   font-weight: bold;
+   font-size: 2.5em;
+   text-transform:uppercase;
+}
+.title{
+   margin-bottom: 2em;
+   margin-top: 1.5em;
+}
+
+li{
+   list-style-type:none;
+   margin: 1em 0;
+}
+
+li p {line-height:1em;}
+.bar{
+   font-size: 1.3em;
+   line-height:1.3em;
+}
+.date{font-size: 1em;}
+.nh{font-size:.8em}

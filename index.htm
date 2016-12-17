@@ -4,44 +4,21 @@
 <meta charset="utf-8">
 <title>Welcome to Thursdays</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
 <script src="https://use.typekit.net/pen3wyh.js"></script>
-<script src="js/moment.min.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
-<style>
-   body{
-      text-align: center;
-      font-family: "coronette",sans-serif;
-   }
-   h1{
-      font-weight: bold;
-      font-size: 2.5em;
-      text-transform:uppercase;
-   }
-   li{
-      list-style-type:none;
-      margin: 1em 0;
-   }
-   li.title{
-      margin-bottom: 2em;
-      margin-top: 1.5em;
-   }
-   li p {line-height:1em;}
-   .bar{
-      font-size: 1.3em;
-      line-height:1.3em;
-   }
-   .date{font-size: 1em;}
-   .nh{font-size:.8em}
-</style>
 </head>
 <body>
-
-   <ul>
-      <li class='title'>
+   <div class="header">
+      <img src="img/primary_web.png"/>
+      <!--<div class='title'>
          <h1>Welcome to Thursdays</h1>
          <p class='bar'>milwaukee, wi</p>
          <p class='nh'>(est. 2016)</p>
-      </li>
+      </div>-->
+   </div>
+   <ul>
+      <!--<-->
       <li>
          <p class='bar'>Fat Daddy's</p>
          <p class='date'></p>
@@ -666,29 +643,8 @@
       </li>
    </ul>
 </body>
-<script>
-   var isChrome = window.chrome;
-   if(isChrome){
-      var bars = document.getElementsByClassName('bar');
-
-      for( var i = 0; i < bars.length; i++){
-         bars[i].style.fontWeight = 'bold';
-      }
-   }
-
-   document.addEventListener("DOMContentLoaded", function(event) {
-      var previousDate = moment('2016-02-18');
-      var bars = document.getElementsByClassName('date');
-
-      for (var i = 0; i < bars.length; i++) {
-         var barDate = previousDate.add(1, 'week');
-         var barDateFormat = barDate.format('MMMM Do, YYYY');
-         bars[i].textContent = barDateFormat;
-         previousDate = barDate
-      }
-   });
-
-</script>
+<script src="js/lib/moment.min.js"></script>
+<script src="js/main.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
