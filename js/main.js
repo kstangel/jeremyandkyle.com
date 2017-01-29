@@ -9,7 +9,7 @@ if(isChrome){
 
 document.addEventListener("DOMContentLoaded", function(event) {
    var previousDate = moment('2016-02-18');
-   var bars = document.getElementsByClassName('date');
+   var bars = document.getElementsByClassName('thurs');
 
    for (var i = 0; i < bars.length; i++) {
       var barDate = previousDate.add(1, 'week');
