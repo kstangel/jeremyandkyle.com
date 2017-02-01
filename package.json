@@ -1,0 +1,25 @@
+{
+  "name": "welcometothrusdays.com",
+  "version": "1.0.0",
+  "description": "Welcome To Thursdays",
+  "main": "main.js",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "smoothscroll": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kstangel/jeremyandkyle.com.git"
+  },
+  "author": "Kyle Stangel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kstangel/jeremyandkyle.com/issues"
+  },
+  "homepage": "https://github.com/kstangel/jeremyandkyle.com"
+}

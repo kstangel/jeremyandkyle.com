@@ -15,7 +15,6 @@ body{
    padding:20px;
 }
 h1{
-   font-weight: bold;
    font-size: 2.5em;
    text-transform:uppercase;
 }
@@ -26,7 +25,10 @@ h1{
 
 li{
    list-style-type:none;
-   margin: 1em 0;
+   margin: 45px 0;
+}
+li.active{
+   color:#b38742;
 }
 
 li p {line-height:1em;}
