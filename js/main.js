@@ -15,7 +15,7 @@ if(isChrome){
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-   var previousDate = moment(FIRST_DATE);
+   var barDate = moment(FIRST_DATE);
    var bars = document.getElementsByClassName('date');
    var nextThurs;
 
@@ -30,10 +30,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
    var nextThursFormat = nextThurs.format(DATE_FORMAT);
 
    var scrollToBarIndex = 0;
+   barDate.add(1, 'week');
 
    for (var i = 0; i < bars.length; i++) {
-
-      var barDate = previousDate.add(1, 'week');
       var barDateFormat = barDate.format(DATE_FORMAT);
 
       if(barDateFormat == nextThursFormat){
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       if(bars[i].classList.contains('thurs')){
          bars[i].textContent = barDateFormat;
-         previousDate = barDate;
+         barDate.add(1, 'week');
       }
    }
 
