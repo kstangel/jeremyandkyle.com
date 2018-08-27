@@ -5,19 +5,18 @@
 
 body{
    text-align: center;
-   font-family:"Bebas",sans-serif;
+   font-family: "Bebas",sans-serif;
 }
 .header{
-   height:250px;
-   margin-bottom:30px;
-}
-.header img{
-   height:250px;
-   position:absolute;
+   width:360px;
+   position: relative;
    margin: 0 auto;
    right:0;
    left:0;
-   padding:20px;
+}
+.header img{
+   width:90%;
+   padding:5%;
 }
 li{
    list-style-type:none;
