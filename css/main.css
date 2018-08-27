@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Bebas;
+    src: url('fonts/BebasNeue-Regular.otf');
+}
+
 body{
    text-align: center;
-   font-family: "coronette",sans-serif;
+   font-family:"Bebas",sans-serif;
 }
 .header{
    height:250px;
@@ -14,15 +19,6 @@ body{
    left:0;
    padding:20px;
 }
-h1{
-   font-size: 2.5em;
-   text-transform:uppercase;
-}
-.title{
-   margin-bottom: 2em;
-   margin-top: 1.5em;
-}
-
 li{
    list-style-type:none;
    margin: 45px 0;
@@ -31,10 +27,9 @@ li.active{
    color:#b38742;
 }
 
-li p {line-height:1em;}
 .bar{
-   font-size: 1.3em;
-   line-height:1.3em;
+   font-size: 1.7em;
+   line-height:1.5em;
 }
-.date{font-size: 1em;}
-.nh{font-size:.8em}
+.date{font-size: 1.3em;}
+.nh{font-size:1em}
